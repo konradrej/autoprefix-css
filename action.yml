@@ -1,11 +1,33 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Autoprefix CSS'
+description: 'Uses Autoprefixer to prefix your CSS files for the configured browsers.'
+author: 'Konrad Rej'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  source_dir:
+    description: Source directory containing CSS files
+    required: false
+    default: css
+  destination_dir:
+    description: Destination directory for prefixed CSS files
+    required: false
+    default: css/prefixed
+  file_prefix:
+    description: Filename prefix for prefixed files
+    required: false
+    default: ''
+  file_suffix:
+    description: Filename suffix for prefixed files
+    required: false
+    default: ''
+
+    # Config value for configuring the browsers
+    
 runs:
   using: 'node16'
+  pre: ''
+  pre-if: ''
   main: 'dist/index.js'
+  post: ''
+  post-if: ''
+branding:
+  icon: 'file-plus'
+  color: 'orange'
