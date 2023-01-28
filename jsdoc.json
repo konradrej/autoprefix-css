@@ -1,8 +1,0 @@
-{
-  "source": {
-    "include": [ "./dist" ]
-  },
-  "opts": {
-    "recurse": true
-  }
-}
