@@ -3,31 +3,27 @@ description: 'Uses Autoprefixer to prefix your CSS files for the configured brow
 author: 'Konrad Rej'
 inputs:
   source_dir:
-    description: Source directory containing CSS files
+    description: 'Source directory containing CSS files'
     required: false
-    default: css
+    default: 'css'
   destination_dir:
-    description: Destination directory for prefixed CSS files
+    description: 'Destination directory for prefixed CSS files'
     required: false
-    default: css/prefixed
+    default: 'css/prefixed'
   file_prefix:
-    description: Filename prefix for prefixed files
+    description: 'Filename prefix for prefixed files'
     required: false
     default: ''
   file_suffix:
-    description: Filename suffix for prefixed files
+    description: 'Filename suffix for prefixed files'
     required: false
     default: ''
 
     # Config value for configuring the browsers
-    
+
 runs:
   using: 'node16'
-  pre: ''
-  pre-if: ''
   main: 'dist/index.js'
-  post: ''
-  post-if: ''
 branding:
   icon: 'file-plus'
   color: 'orange'

@@ -12,7 +12,7 @@
     "package": "ncc build --source-map --license licenses.txt",
     "test": "jest",
     "doc": "npx typedoc ./src/main.ts",
-    "all": "npm run build && npm run format && npm run lint && npm run package && npm test && npm run doc"
+    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
   },
   "repository": {
     "type": "git",
